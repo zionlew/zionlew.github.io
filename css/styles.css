@@ -1,3 +1,15 @@
 body {
-    background-color: lightblue;
+    background-color :  #E0FFFF;
+    font-family :  "Microsoft YaHei";
+    font-size : 14px;
+}
+.yuanwen {
+    font-size: inherit;
+}
+.fanyi {
+    font-size: 10px;
+    margin: 10px;
+}
+rt {
+    font-size: 8px;
 }
