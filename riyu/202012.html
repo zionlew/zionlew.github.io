@@ -6,24 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <style type="text/css">
-    </style>
+    <script>
+        function showText(displayID,btnID) {
+            if (document.getElementById(displayID).style.display == "none") {
+                document.getElementById(displayID).style.display = "";
+                document.getElementById(btnID).innerText = "隐藏原文";
+            } else {
+                document.getElementById(displayID).style.display = "none";
+                document.getElementById(btnID).innerText = "显示原文";
+            }
+        }
+    </script>
 </head>
 <body>
     <h3>問題1</h3>
     <div class="leval1">
         <h4>1番</h4>
+        <button id="btn1" onclick='showText("id1-1","btn1")'>显示原文</button>
         <div>
+            1．ホームで忘れ物をさがす<br />
+            2．そうじの人に忘れ物がないか聞く<br />
+            3．事務所で忘れ物がないかたずねる<br />
+            4．忘れ物センターに問い合わせる<br />
+        </div>
+        <div id="id1-1" style="display: none;">
+            <br />
+            原文：<br />
             駅のホームで女の人と駅員が話しています。女の人はこのあとまず何をしますか。<br />
             女：あのう。すみません。赤い傘の忘れ物なかったでしょうか。このあたりに置いたと思って探してみたんですが、ないんです。1時間くらいまえなんですけど...<br />
             男：傘ですか。さっきまで掃除の人がいましたけどね。見つかった忘れ物は駅の事務所に置いてあるので。行って聞いて見てください。改札の隣です。<br />
             女：ありがとうございます。<br />
             男：もし事務所になかったら、隣の山川駅の忘れ物センターに聞いてみてもいいかもしれませんね。まれに拾った方がそちらにお屆けになることもありますから。<br />
             女：分かりました。<br />
-            女の人はこのあとまず<ruby>何<rt>なに</rt></ruby>をしますか。<br />
+            女の人はこのあとまず<ruby>何</ruby>をしますか。<br />
             <br />
         </div>
-
+        <hr />
         <h4>2番</h4>
         <div>
             會社で男の人と女の人が話しています。男の人は語學の勉強のためにまず何をしますか。<br />
@@ -41,7 +59,7 @@
             男の人は語學の勉強のためにまず何をしますか。<br />
             <br />
         </div>
-
+        <hr />
         <h4>3番</h4>
         <div>
             會社で女の人と男の人が話しています。女の人は倉庫に入るとき、どの順番で入口のボタンを押さなければなりませんか。<br />
@@ -57,7 +75,7 @@
             女の人は倉庫に入るとき、どの順番で入口のボタンを押さなければなりませんか。<br />
             <br />
         </div>
-
+        <hr />
         <h4>4番</h4>
         <div>
             ホテルの受付で女の人と男の人が話しています。女の人どこでパソコンを使いますか。<br />
@@ -67,7 +85,7 @@
             男：でしたら、こちらから3分ほど歩いたところにインターネットカフェがございます。あっ、でもお客様、ロビーにも一臺でしたら、パソコンがございます。文章をなおすぐらいでしたら、お使いになれますよ。あっ、でも今お使いの方がいらっしゃいますね。お待ちになりますか。<br />
             女：いいです。ちょっと歩きたいし、行ってきます。どうもありがとう。女の人どこでパソコンを使いますか。<br />
         </div>
-
+        <hr />
         <h4>5番</h4>
         <div>
             図書館で職員がボランティアの人たちに話しています。ボランティアの人はこれから何をしますか。<br />
