@@ -2,7 +2,7 @@ body {
     background-color: #e8dede;
     font-family: "Microsoft YaHei";
     font-size: 14px;
-}
-.leval1 {
-    margin: 10px;
+    margin: 0px auto;
+    padding: 0px;
+    width: 50%;
 }
