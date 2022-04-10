@@ -5,13 +5,16 @@ body {
     margin: 0 auto;
     max-width: 800px;
 }
-.yuanwen {
-    font-size: inherit;
+
+/**设置*/
+#page-wrapper {
+    background-color: #e8dede;
+    padding: 0 10px;
 }
-.fanyi {
-    font-size: 10px;
-    margin: 10px;
+
+
+.row {
 }
-rt {
-    font-size: 8px;
+.row-hidden{
+    display:none;
 }
