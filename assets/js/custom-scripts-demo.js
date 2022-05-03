@@ -1,0 +1,4 @@
+function btnTest() {
+
+    alert("ok");
+}

@@ -1,0 +1,2 @@
+python D:/workspace/pythonProject/ana_riyu/format_sentence.py 3
+1,うちに

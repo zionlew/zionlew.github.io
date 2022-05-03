@@ -1,0 +1,45 @@
+body {
+    background-color: #e8dede;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+}
+div{
+    margin:5px;
+    min-height:30px;
+}
+span{
+    margin:0px;
+}
+li{
+    min-height:30px;
+}
+#header {
+    height:80px;
+    background-color: #57e2c9;
+}
+
+#content {
+    min-height: 750px;
+    max-width:1200px;
+    margin:0 auto;
+ 
+}
+#content_nav {
+    height: 30px;
+    margin: 3px;
+}
+
+#content_data{
+    margin:20px;
+
+}
+#footer {
+    height: 50px;
+    background-color: #57e2c9;
+}
+.font_cn {
+    font-family: "宋体";
+}
+.font_jp {
+    font-family: "Meiryo UI";
+}
