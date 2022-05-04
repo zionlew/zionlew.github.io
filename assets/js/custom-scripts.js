@@ -34,5 +34,5 @@ function sentence_next() {
 }
 
 function sentence_grammar() {
-    location.href = "../../riyu/grammar1.html";
+    location.href = "../riyu/grammar1.html";
 }
