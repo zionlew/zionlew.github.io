@@ -17,12 +17,17 @@
         <div id="content">
             <div id="nav1">
                 <button onclick="nav()">三</button>
+                <button onclick="sentence_t()">原文</button>
+                <button onclick="sentence_next()">下一个</button>
             </div>
             <hr />
-
+            <div id="input_area">
+                <input type="text" style="min-width: 100%;" />
+                <input type="hidden" id="s_id" value="3" />
+            </div>
             <div id="sentence_area">
-                <div id="sentence_def">就算没钱也该好好吃饭。</div>
-                <div id="sentence_t">たとえお金がないにしろ、食事だけはきちんと取るべきだ。</div>
+                <div id="sentence_def" style="display: block">听到合格的消息，她喜极而泣。</div>
+                <div id="sentence_t" style="display: none">合格の知らせを聞いて、彼女はうれしさのあまり泣き出した。</div>
             </div>
             <hr />
             <div id="nav2" style="text-align: center">
@@ -37,6 +42,6 @@
         </div>
     </div>
     <!-- 自定义JS方法 -->
-    <script src="../assets/js/custom-scripts.js"></script>
+    <script src="../assets/js/custom-scripts.js" charset="utf-8"></script>
 </body>
 </html>

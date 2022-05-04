@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>zionlew</title>
+    <!-- 设置字符编码 -->
+    <meta charset="utf-8" />
+    <!-- 手机自适应 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 自定义css样式 -->
+    <link href="../assets/css/custom-styles-riyu.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!--主体内容-->
+        <div id="content">
+            <div id="nav1">
+                <button onclick="nav()">三</button>
+                <button onclick="sentence_t()">原文</button>
+                <button onclick="sentence_next()">下一个</button>
+            </div>
+            <hr />
+            <div id="input_area">
+                <input type="text" style="min-width: 100%;" />
+                <input type="hidden" id="s_id" value="1" />
+            </div>
+            <div id="sentence_area">
+                <div id="sentence_def" style="display: block">就算没钱也该好好吃饭。</div>
+                <div id="sentence_t" style="display: none">たとえお金がないにしろ、食事だけはきちんと取るべきだ。</div>
+            </div>
+            <hr />
+            <div id="nav2" style="text-align: center">
+                <button onclick="sentence_more()">更多</button>
+                <button onclick="sentence_next()">下一个</button>
+                <button onclick="sentence_t()">原文</button>
+                <button onclick="sentence_def()">翻译</button>
+                <button onclick="sentence_grammar()">语法</button>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- 自定义JS方法 -->
+    <script src="../assets/js/custom-scripts.js" charset="utf-8"></script>
+</body>
+</html>
