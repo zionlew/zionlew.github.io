@@ -1,5 +1,5 @@
 body {
-    background-color: #e8dede;
+    /*background-color: #e8dede;*/
     font-family: "Microsoft YaHei";
     font-size: 16px;
 }
@@ -42,4 +42,10 @@ li{
 }
 .font_jp {
     font-family: "Meiryo UI";
+}
+
+/**  例句页面使用 */
+
+#sentence_area {
+    min-height: 400px;
 }
