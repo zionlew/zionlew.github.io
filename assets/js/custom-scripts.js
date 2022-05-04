@@ -8,5 +8,5 @@ function nav() {
 }
 
 function sentence_t() {
-    alert("原文");
+    alert("原文dd");
 }
