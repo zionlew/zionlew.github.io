@@ -32,3 +32,7 @@ function sentence_next() {
     location.href = "../../riyu/sentence" + sid + ".html";
 
 }
+
+function sentence_grammar() {
+    location.href = "../../riyu/grammar1.html";
+}

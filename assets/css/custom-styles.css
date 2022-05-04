@@ -1,25 +1,25 @@
 body {
-    background-color: #e8dede;
+    /*background-color: #e8dede;*/
     font-family: "Microsoft YaHei";
     font-size: 16px;
 }
 
 /**设置*/
 #wrapper {
-
 }
 
-#title-wrapper{
-    text-align:center;    
+#title-wrapper {
+    text-align: center;
 }
+
 #nav-wrapper {
     margin: 0 auto;
     max-width: 800px;
 }
+
 #page-wrapper {
     margin: 0 auto;
     max-width: 800px;
-    background-color: #e8dede;
     padding: 0 10px;
 }
 
@@ -27,6 +27,6 @@ body {
 .row {
 }
 
-.row-hidden{
-    display:none;
+.row-hidden {
+    display: none;
 }
