@@ -1,4 +1,8 @@
 function btnTest() {
 
-    alert("ok");
+    alert("ok1");
+}
+
+function nav() {
+    location.href = "../index.html";
 }
