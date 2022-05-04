@@ -6,3 +6,7 @@ function btnTest() {
 function nav() {
     location.href = "../index.html";
 }
+
+function sentence_t() {
+    alert("原文");
+}
