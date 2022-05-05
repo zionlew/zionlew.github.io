@@ -166,7 +166,7 @@ border-radius: 0;
 padding-bottom: 9px;
 margin: 0;
 border-bottom: 1px solid transparent;
-text-align: left;background-color: rgb(237, 237, 237);padding: 32px 22px 32px 15px;color: #323232;}
+text-align: left;background-color: rgb(237, 237, 237);padding: 5px 22px 5px 15px;color: #323232;}
 .panel-left{  
 width: 100px;
 height: 100px;background: #0866C6;/* border: 2px solid #4590DA; */
@@ -616,13 +616,13 @@ line-height: 1.428571429;
 } 
  #page-wrapper {
 position: relative;
-top: 93px;
+top: 55px;
  }
  }
  @media(max-width:480px) {
  #page-wrapper {
 position: relative;
-top: 93px;
+top: 55px;
  }
 .page-header small {
 display: block;
