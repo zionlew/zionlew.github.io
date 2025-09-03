@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
+            font-size: 16px; /* 默认字体大小 */
         }
         
         .header {
@@ -32,19 +33,41 @@
             font-size: 18px;
         }
         
-        .upload-btn {
+        .toolbar {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .tool-btn {
             background-color: #3498db;
             color: white;
             border: none;
-            padding: 8px 15px;
+            padding: 8px 12px;
             border-radius: 4px;
             cursor: pointer;
             font-size: 14px;
             transition: background-color 0.3s;
         }
         
+        .tool-btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .upload-btn {
+            background-color: #3498db;
+        }
+        
         .upload-btn:hover {
             background-color: #2980b9;
+        }
+        
+        .font-size-btn {
+            background-color: #95a5a6;
+        }
+        
+        .font-size-btn:hover {
+            background-color: #7f8c8d;
         }
         
         .content-container {
@@ -114,6 +137,7 @@
         .modal-body {
             padding: 20px;
             border-bottom: 1px solid #eee;
+            min-height: 60px;
         }
         
         .modal-footer {
@@ -121,6 +145,7 @@
             display: flex;
             justify-content: flex-end;
             gap: 10px;
+            flex-wrap: wrap;
         }
         
         .modal-btn {
@@ -130,6 +155,7 @@
             cursor: pointer;
             font-size: 14px;
             transition: background-color 0.3s;
+            min-width: 80px;
         }
         
         .copy-btn {
@@ -150,6 +176,15 @@
             background-color: #2980b9;
         }
         
+        .translate-btn {
+            background-color: #9b59b6;
+            color: white;
+        }
+        
+        .translate-btn:hover {
+            background-color: #8e44ad;
+        }
+        
         .close-btn {
             background-color: #e74c3c;
             color: white;
@@ -162,13 +197,35 @@
         #fileInput {
             display: none;
         }
+        
+        .translation-result {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border-left: 3px solid #9b59b6;
+        }
+        
+        .font-size-display {
+            color: white;
+            margin: 0 5px;
+            min-width: 40px;
+            text-align: center;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <div class="file-name" id="fileName">未选择文件</div>
-        <button class="upload-btn" id="uploadBtn">上传文件</button>
-        <input type="file" id="fileInput" accept=".txt">
+        <div class="toolbar">
+            <button class="font-size-btn tool-btn" id="decreaseFontBtn">A-</button>
+            <span class="font-size-display" id="fontSizeDisplay">16px</span>
+            <button class="font-size-btn tool-btn" id="increaseFontBtn">A+</button>
+            <button class="font-size-btn tool-btn" id="resetFontBtn">重置</button>
+            <button class="upload-btn tool-btn" id="uploadBtn">上传文件</button>
+            <input type="file" id="fileInput" accept=".txt">
+        </div>
     </div>
     
     <div class="content-container">
@@ -182,6 +239,7 @@
             <div class="modal-footer">
                 <button class="modal-btn copy-btn" id="copyBtn">复制</button>
                 <button class="modal-btn search-btn" id="searchBtn">搜索</button>
+                <button class="modal-btn translate-btn" id="translateBtn">翻译</button>
                 <button class="modal-btn close-btn" id="closeBtn">关闭</button>
             </div>
         </div>
@@ -198,10 +256,63 @@
             const selectedText = document.getElementById('selectedText');
             const copyBtn = document.getElementById('copyBtn');
             const searchBtn = document.getElementById('searchBtn');
+            const translateBtn = document.getElementById('translateBtn');
             const closeBtn = document.getElementById('closeBtn');
+            const decreaseFontBtn = document.getElementById('decreaseFontBtn');
+            const increaseFontBtn = document.getElementById('increaseFontBtn');
+            const resetFontBtn = document.getElementById('resetFontBtn');
+            const fontSizeDisplay = document.getElementById('fontSizeDisplay');
 
             // 当前选中的句子内容
             let currentSelectedSentence = '';
+
+            // 字体大小控制
+            let currentFontSize = 16;
+            const minFontSize = 12;
+            const maxFontSize = 24;
+            const defaultFontSize = 16;
+
+            // 更新字体大小显示
+            function updateFontSizeDisplay() {
+                fontSizeDisplay.textContent = `${currentFontSize}px`;
+            }
+
+            // 设置页面字体大小
+            function setFontSize(size) {
+                currentFontSize = size;
+                document.body.style.fontSize = `${size}px`;
+                updateFontSizeDisplay();
+
+                // 保存到本地存储
+                localStorage.setItem('textProcessorFontSize', size);
+            }
+
+            // 减小字体
+            decreaseFontBtn.addEventListener('click', function () {
+                if (currentFontSize > minFontSize) {
+                    setFontSize(currentFontSize - 1);
+                }
+            });
+
+            // 增大字体
+            increaseFontBtn.addEventListener('click', function () {
+                if (currentFontSize < maxFontSize) {
+                    setFontSize(currentFontSize + 1);
+                }
+            });
+
+            // 重置字体
+            resetFontBtn.addEventListener('click', function () {
+                setFontSize(defaultFontSize);
+            });
+
+            // 初始化字体大小
+            const savedFontSize = localStorage.getItem('textProcessorFontSize');
+            if (savedFontSize) {
+                setFontSize(parseInt(savedFontSize, 10));
+            } else {
+                setFontSize(defaultFontSize);
+            }
 
             // 点击上传按钮触发文件选择
             uploadBtn.addEventListener('click', function () {
@@ -269,6 +380,12 @@
                             currentSelectedSentence = sentence.trim();
                             selectedText.textContent = currentSelectedSentence;
 
+                            // 移除之前的翻译结果（如果有）
+                            const oldTranslation = selectedText.querySelector('.translation-result');
+                            if (oldTranslation) {
+                                selectedText.removeChild(oldTranslation);
+                            }
+
                             // 显示模态框
                             modalOverlay.style.display = 'flex';
 
@@ -290,7 +407,7 @@
                 // 使用Clipboard API复制文本
                 navigator.clipboard.writeText(currentSelectedSentence)
                     .then(() => {
-                        //alert('内容已复制到剪贴板！');
+                        alert('内容已复制到剪贴板！');
                         modalOverlay.style.display = 'none';
                     })
                     .catch(err => {
@@ -316,6 +433,61 @@
                 window.open(searchUrl, '_blank');
                 modalOverlay.style.display = 'none';
             });
+
+            // 翻译按钮点击事件
+            translateBtn.addEventListener('click', function () {
+                if (!currentSelectedSentence) return;
+
+                // 检查是否已经有翻译结果
+                const existingTranslation = selectedText.querySelector('.translation-result');
+                if (existingTranslation) {
+                    return; // 如果已经有翻译结果，不再重复翻译
+                }
+
+                // 显示翻译中提示
+                const translatingDiv = document.createElement('div');
+                translatingDiv.textContent = '翻译中...';
+                selectedText.appendChild(translatingDiv);
+
+                // 使用免费翻译API（这里使用模拟翻译，实际使用时需要替换为真实API）
+                simulateTranslation(currentSelectedSentence)
+                    .then(translation => {
+                        selectedText.removeChild(translatingDiv);
+
+                        const translationDiv = document.createElement('div');
+                        translationDiv.className = 'translation-result';
+                        translationDiv.innerHTML = `<strong>翻译结果：</strong>${translation}`;
+                        selectedText.appendChild(translationDiv);
+                    })
+                    .catch(error => {
+                        selectedText.removeChild(translatingDiv);
+
+                        const errorDiv = document.createElement('div');
+                        errorDiv.className = 'translation-result';
+                        errorDiv.innerHTML = `<strong>翻译失败：</strong>${error.message || '未知错误'}`;
+                        selectedText.appendChild(errorDiv);
+                    });
+            });
+
+            // 模拟翻译函数（实际使用时替换为真实API调用）
+            function simulateTranslation(text) {
+                return new Promise((resolve) => {
+                    // 模拟网络延迟
+                    setTimeout(() => {
+                        // 简单模拟翻译 - 实际使用时替换为真实API调用
+                        const translations = {
+                            "你好": "Hello",
+                            "谢谢": "Thank you",
+                            "再见": "Goodbye",
+                            "我爱你": "I love you",
+                            "早上好": "Good morning"
+                        };
+
+                        const translation = translations[text] || `[翻译: ${text}]`;
+                        resolve(translation);
+                    }, 1000);
+                });
+            }
 
             // 关闭按钮点击事件
             closeBtn.addEventListener('click', function () {
