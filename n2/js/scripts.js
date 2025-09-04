@@ -1,16 +1,32 @@
-// 按钮1点击事件
-document.getElementById('btn1').addEventListener('click', function () {
-    alert('按钮1被点击了！');
-    console.log('按钮1被点击');
-});
 
-// 按钮2点击事件
-document.getElementById('btn2').addEventListener('click', function () {
-    alert('按钮2被点击了！');
-    console.log('按钮2被点击');
-});
 
-// 页面加载完成时执行
+// 简单的交互效果
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('页面加载完成');
+    const buttons = document.querySelectorAll('.header-btn');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+
+            if (this.querySelector('.fa-search')) {
+                alert('搜索功能');
+            } else if (this.querySelector('.fa-ellipsis-v')) {
+                alert('菜单功能');
+            }
+        });
+    });
+
+    // 卡片点击效果
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.addEventListener('click', function () {
+            this.style.transform = 'scale(1.02)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+        });
+    });
 });
