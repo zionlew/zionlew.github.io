@@ -13,11 +13,1139 @@
         <form name="dttn" class="dttn">
             <div class="chuyen_trang">
                 <input type="button" onclick="Saiten()" class="btn-info" value="Check result">
-            </div>
+            </div>			
+		
+								<!-- bat dau mot chương mới-->
+								<div class="big_item"> 問題 1 では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選んでください。 <br><br><iframe src="cid:frame-3CFAE6C90D434F76E1570C86946C94C1@mhtml.blink" width="440" height="70" allow="autoplay" allowfullscreen="true"></iframe> </div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 1番 </div>
+					<div style="display:none" id="diemso1">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_1row">
+																												<label class="container">
+								<div class="answers" id="QS11">1) アパートの情報誌を買いに行く</div>
+								<input type="radio" value="1) アパートの情報誌を買いに行く　" name="QS1">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS12">2) 不動産屋に行く</div>
+								<input type="radio" value="2) 不動産屋に行く　" name="QS1">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS13">3) 希望の条件を書きだす </div>
+								<input type="radio" value="3) 希望の条件を書きだす 　" name="QS1">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS14">4) 住みたい町を歩く</div>
+								<input type="radio" value="4) 住みたい町を歩く　" name="QS1">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
 
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT1">Tham khảo: 大学で男の人と女の人が話しています。 女の人はこの後何をしますか。<br><br>男: 青木さん、何見てるの?<br><br>
+女 : ああ、これ? アパートの情報が載ってる雑誌。 今アパートを探してるんだ。 そういえば、山田君って最近引越ししたんだよね。 どうやって部屋探したの?<br><br>男: そうだな。 もちろん、 不動産屋にも行ったんだけど、 不動産屋に行く前に、家賃とか日当たりとか、気になる条件をノートに書き出して、整理してみたよ。<br><br>女:それは一応やったんだけどね。<br><br>
+男:そうなんだ。あと、 住みたい町に実際に行ってみるといいよ。 運がよければ、歩いているうちによさそうなアパートが見つかるかもしれないし。 住みたい町はもう決まってるの?<br><br>女:うん、一応候補あるの。 今日はもう授業ないし、これからちょっと行ってみよう<br><br>女の人はこの後何をしますか。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS1">4</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type1">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 2番 </div>
+					<div style="display:none" id="diemso2">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_1row">
+																												<label class="container">
+								<div class="answers" id="QS21">1) 家具がたおれないようにする
+</div>
+								<input type="radio" value="1) 家具がたおれないようにする
+　" name="QS2">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS22">2) 背の低い家具を固定する?
+</div>
+								<input type="radio" value="2) 背の低い家具を固定する?
+　" name="QS2">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS23">3) 避難用のセットを準備する
+</div>
+								<input type="radio" value="3) 避難用のセットを準備する
+　" name="QS2">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS24">4) 家族のみんなで避難場所を決める?
+</div>
+								<input type="radio" value="4) 家族のみんなで避難場所を決める?
+　" name="QS2">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
 
-    </div>
-    <script src="js/scripts.js"></script>
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT2">Tham khảo: 女の人が友達と話しています。 女の人は地震に備えて何をしておけばいいですか。<br><br>女:この間の地震、かなり揺れて怖かったね。 地震が来た時のために、 何かしとかなくちゃって思っ てるんだけど、実際にどういうことをすればいいのかな。<br><br>男: やっぱり怖いのは家具が倒れることだから、 本棚とか背の高い家具があったら、 かべに固定した ほうがいいよ。<br><br>女: ああ、でも、うちの家具みんな背が低いから、それは大丈夫かな。<br><br>男: そっか。 あ、それから、 避難用のセットがある? すぐ持ち出せるように水や食べ物の入れた袋は 必ず用意しといたほうがいいって、 テレビで言ったよ。<br><br>女: あ、それは持ってないな。 どこで売ってるの?<br><br>男: デパートとかにあるよ。<br><br>女: じゃ、 探してみる。<br><br>男: あとは、うちの人と話し合って、 家族の避難場所を決めておいたほうがいいよ。<br><br>女:あ、でも、今は家族は皆海外に住んでるから、 それは関係ないかな。 いろいろありがとう。<br><br>女の人は地震に備えて何をしておけばいいですか。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS2">3</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type2">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 3番 </div>
+					<div style="display:none" id="diemso3">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS31">1) 0000 01
+</div>
+								<input type="radio" value="1) 0000 01
+　" name="QS3">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS32">2) 0000 02
+</div>
+								<input type="radio" value="2) 0000 02
+　" name="QS3">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS33">3) 0503 02
+</div>
+								<input type="radio" value="3) 0503 02
+　" name="QS3">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS34">4) 0503 09
+</div>
+								<input type="radio" value="4) 0503 09
+　" name="QS3">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT3">Tham khảo: 電話で病院の診察の予約をしようと思っています。今日の午後の診察を予約するには、 どの番号を押せばいいですか。<br><br>女 : 山川病院自動予約システムです。 最初にご希望のお日にちを4桁の番号で御入力ください。 五月 三日なら0503 となります。 ただし、本日の診察をご希望の方は日にちではなく、 0001 とご入力 ください。 次に、午前中をご希望なら、続けて01、 午後なら02、 特にご希望のない方は09 と入 力してください。<br><br>今日の午後の診察を予約するには、どの番号を押せばいいですか。
+</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS3">2</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type3">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 4番 </div>
+					<div style="display:none" id="diemso4">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_1row">
+																												<label class="container">
+								<div class="answers" id="QS41">1) 田中さんへ会議の時間が変わりました
+</div>
+								<input type="radio" value="1) 田中さんへ会議の時間が変わりました
+　" name="QS4">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS42">2) 田中さんへ明日の会議に出席してください
+</div>
+								<input type="radio" value="2) 田中さんへ明日の会議に出席してください
+　" name="QS4">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS43">3) 田中さんへサクラ印刷の山川さんに 電話してください
+</div>
+								<input type="radio" value="3) 田中さんへサクラ印刷の山川さんに 電話してください
+　" name="QS4">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS44">4) 田中さんへサクラ印刷の山川さんが再度電話をくださいます</div>
+								<input type="radio" value="4) 田中さんへサクラ印刷の山川さんが再度電話をくださいます　" name="QS4">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT4">Tham khảo: 会社で女の人が男の人と電話で話しています。 女の人は同僚の田中さんにどんなメモを書きますか。 女: はい、 富士出版です。<br><br>男: お世話になっております。 桜印刷の山川ですが、 田中さんはいらっしゃいますか。<br><br>女: お世話になっております。 あいにく田中は席をはずしておりまして、 2時からミーティングがあ あるので、その前には戻る予定ですが。<br><br>男: そうですか、 実は先ほど、 私が留守の間、 田中さんからお電話をいただいたようで、明日の会議 の件だと伝言があったんですが。<br><br>女:そうですか。 では、 田中が戻り次第、 山川さんに折り返しお電話差し上げるよう伝えましょうか。<br><br>男: お願いできますか。<br><br>女: はい、かしこまりました。<br><br>女の人は同僚の田中さんにどんなメモを書きますか。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS4">3</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type4">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 5番 </div>
+					<div style="display:none" id="diemso5">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_1row">
+																												<label class="container">
+								<div class="answers" id="QS51">1) 字の間違いを直す
+</div>
+								<input type="radio" value="1) 字の間違いを直す
+　" name="QS5">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS52">2) さんこうぶんけんの書き方を直す
+</div>
+								<input type="radio" value="2) さんこうぶんけんの書き方を直す
+　" name="QS5">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS53">3) グラフを直す
+</div>
+								<input type="radio" value="3) グラフを直す
+　" name="QS5">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS54">4) ろんぶんのコピーを3部作る</div>
+								<input type="radio" value="4) ろんぶんのコピーを3部作る　" name="QS5">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT5">Tham khảo: 大学で男の学生と先生が話しています。 学生はこの後、まず何をしなければなりませんか。<br><br>
+男: 先生、 先日お渡しした論文の件なんですが、 見ていただけましたでしょうか。<br><br>女: うん、よくかけてましたよ。 いくつかの字の間違いがあったのと、参考文献の書き方にちょっと気になる点がありましたけどね。<br><br>男: あ、はい。<br><br>女: あとは、このグラフの値、これで正しいですか。<br><br>男: えーと、 あ、すみません。 直したはずだったんですが、 古いほうのデータです。<br><br>女: 大事なところだから、 まずはここだけなおして、すぐ見せてください。<br><br>男: はい、わかりました。<br><br>女: あ、それから、今年から提出部数が3部になったから、 忘れないでね。<br><br>学生はこの後、 まず何をしなければなりませんか。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS5">3</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type5">4</div>
+										<!-- bat dau mot chương mới-->
+								<div class="big_item"> 問題 2 では、まず質問を聞いてください。そのあと、 問題用紙の選択肢を読んでください。読む時間があります。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選んでください。 <br><br><iframe src="cid:frame-D416E63541F8B1823167A50991A3D145@mhtml.blink" width="440" height="70" allow="autoplay" allowfullscreen="true"></iframe> </div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 1番 </div>
+					<div style="display:none" id="diemso6">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_1row">
+																												<label class="container">
+								<div class="answers" id="QS61">1) 友達とつりに行く</div>
+								<input type="radio" value="1) 友達とつりに行く　" name="QS6">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS62">2) 病院に友達のおみまいに行く</div>
+								<input type="radio" value="2) 病院に友達のおみまいに行く　" name="QS6">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS63">3) 友達のアパートに行く</div>
+								<input type="radio" value="3) 友達のアパートに行く　" name="QS6">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS64">4) 店に自転車を取りに行く</div>
+								<input type="radio" value="4) 店に自転車を取りに行く　" name="QS6">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT6">Tham khảo: 家で息子と母親が話しています。 息子は明日、 どこに行くといっていますか。<br><br>男: 明日、午前中から出かけるからね。<br><br>女: ああ、友達と釣りに行くんだったよね。<br><br>男: んん。 それが、 その友達が先週自転車で転んで、 足怪我しちゃってね。 今、 入院してるんだ。<br><br>女じゃあ、お見舞いに行ってあげなくちゃ。<br><br>男: ううん。 明日はね、あいつのアパートに行くんだ。<br><br>女: えつ。<br><br>男: そん時の自転車が、 修理に出してあってね。 直ったから、明日配達してもらうことになったんだ。<br><br>女:そう。<br><br>男: 店に取りに行ってもいいんだけど。 おれが乗って、また壊しちゃっても悪いし。<br><br>女: それはそうね。<br><br>男: あいつ一人暮らしだから、 代わりに俺が受け取るってわけ。<br><br>女: そうなの。 それは御苦労さまね。<br><br>息子は明日、 どこに行くといっていますか。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS6">3</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type6">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 2番 </div>
+					<div style="display:none" id="diemso7">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_1row">
+																												<label class="container">
+								<div class="answers" id="QS71">1) せんぱいにしょうかいしてもらったから</div>
+								<input type="radio" value="1) せんぱいにしょうかいしてもらったから　" name="QS7">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS72">2) 大学での専門が役に立ちそうだから</div>
+								<input type="radio" value="2) 大学での専門が役に立ちそうだから　" name="QS7">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS73">3) 給料が高いから</div>
+								<input type="radio" value="3) 給料が高いから　" name="QS7">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS74">4) 今住んでいるところから通えるから</div>
+								<input type="radio" value="4) 今住んでいるところから通えるから　" name="QS7">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT7">Tham khảo: 女の学生と男の学生が話しています。 男の学生が就職する会社を選んだ理由は何ですか。<br><br>女:就職、 決まったんだって。 先輩に紹介してもらった、あの会社?<br><br>男: うーん。 あそこも採用の連絡はもらったんだけど、 決めたのは先生に紹介してもらった会社。 そこだと、大学で勉強したことを活かせそうなんだ。<br><br>女:そう、 それはよかったね。<br><br>男: 仕事はハードだし、帰りも遅くなるらしいんだけどね。<br><br>女: でも、 残業代つくんでしょ。<br><br>男: まあ、一応ね。 それより、 会社が遠くて、 引っ越しもしなくちゃいけないんだ。 それがちょっとね。<br><br>女: でも、 まあ、 決まってよかったじゃない。<br><br>男:そうだね。 給料はそんなでもないけど、 頑張ってみるよ。<br><br>男の学生が就職する会社を選んだ理由は何ですか。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS7">2</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type7">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 3番 </div>
+					<div style="display:none" id="diemso8">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_1row">
+																												<label class="container">
+								<div class="answers" id="QS81">1) 電車が事故で遅れたから</div>
+								<input type="radio" value="1) 電車が事故で遅れたから　" name="QS8">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS82">2) ドアの近くの人が動かなかったから</div>
+								<input type="radio" value="2) ドアの近くの人が動かなかったから　" name="QS8">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS83">3) ドアが開かなかったから </div>
+								<input type="radio" value="3) ドアが開かなかったから 　" name="QS8">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS84">4) 電車が止まらなかったから</div>
+								<input type="radio" value="4) 電車が止まらなかったから　" name="QS8">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT8">Tham khảo: 大学で男の学生と女の学生が話しています。 男の学生はどうして怒っていますか。<br><br>男: おはよう。<br><br>女: おはよう。 あれっ、 今日授業、 2時間目からだっけ。<br><br>男: ううん。 1時間目からだよ。 ねえ、聞いてよ。 今日学校に来るときの電車のことなんだけど。<br><br>女: うん、どうしたの。<br><br>男: 今朝、 事故があったみたいで。 いつもより電車が混んでてね。<br><br>女:うん。<br><br>男: それはしょうがないと思うんだけど、 電車を降りようとしても、ドアの近くにいる人が、なかなか動いてくれなくて。<br><br>女:ええー。<br><br>男 : それで、「すみません。 降ります。」って言ったんだけど、 結局降りられなくて。<br><br>女: ええー。 大変だったね。<br><br>男次の駅まで行っちゃったんだよ。<br><br>女:そうなんだ。<br><br>男の学生はどうして怒っていますか。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS8">2</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type8">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 4番 </div>
+					<div style="display:none" id="diemso9">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_1row">
+																												<label class="container">
+								<div class="answers" id="QS91">1) 医者に吸うなと言われたから</div>
+								<input type="radio" value="1) 医者に吸うなと言われたから　" name="QS9">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS92">2) 身近な人にめいわくがかかるから</div>
+								<input type="radio" value="2) 身近な人にめいわくがかかるから　" name="QS9">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS93">3) 吸えない場所が増えているから</div>
+								<input type="radio" value="3) 吸えない場所が増えているから　" name="QS9">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS94">4) たばこが値上がりしているから</div>
+								<input type="radio" value="4) たばこが値上がりしているから　" name="QS9">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT9">Tham khảo: 会社で女の人と男の人が話しています。 男の人はどうして禁煙することにしたと言っていますか。<br><br>女: あれっ。 たばこ、やめたの?<br><br>男: うん。 禁煙したんだ。<br><br>女:ええー。前は医者に吸うなって言われても、吸ってたのに<br><br>男: うん。 実は、結婚してからね、 家族への影響も考えるようになってね<br><br>女:そう。 確かに。 たばこは吸う人だけじゃなくて、周囲の人にも悪いって言われているよね。<br><br>男: うん。 はじめは難しいかなって思ってたんだけど、駅とか、吸えない場所も増えてきてるし。 もう、結構続いてるんだ。<br><br>女:そう。 最近、たばこも値上がりしてるし、ちょうどいい機会かもね。<br><br>男の人はどうして禁煙することにしたと言っていますか。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS9">2</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type9">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 5番 </div>
+					<div style="display:none" id="diemso10">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_1row">
+																												<label class="container">
+								<div class="answers" id="QS101">1) かぜをひいたから</div>
+								<input type="radio" value="1) かぜをひいたから　" name="QS10">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS102">2) バイトを交代するから
+</div>
+								<input type="radio" value="2) バイトを交代するから
+　" name="QS10">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS103">3) 旅行に行くことになったから</div>
+								<input type="radio" value="3) 旅行に行くことになったから　" name="QS10">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS104">4) 本をまだ読んでいないから</div>
+								<input type="radio" value="4) 本をまだ読んでいないから　" name="QS10">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT10">Tham khảo: 留守番電話のメッセージを聞いています。 女の人はどうして勉強会に参加できませんか。<br><br> 女: あっ。 木村です。 明日の勉強会のことなんだけど、悪いけど、 急に行けなくなっちゃったの。 風 邪をひいたから、バイトを代わってほしいって、 頼まれちゃって。 私も、この前旅行したとき代 わってもらったから、断りにくくて。 急でごめんね。 あと、 借りてた本返すの、 今度、 大学で会 ったときでいいかな。 また、 あとで電話するね。 じゃあ。<br><br>女の人はどうして勉強会に参加できませんか。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS10">2</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type10">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 6番 </div>
+					<div style="display:none" id="diemso11">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_1row">
+																												<label class="container">
+								<div class="answers" id="QS111">1) 流行りにのれたこと</div>
+								<input type="radio" value="1) 流行りにのれたこと　" name="QS11">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS112">2) 体力がついたこと
+</div>
+								<input type="radio" value="2) 体力がついたこと
+　" name="QS11">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS113">3) よく眠れるようになったこと</div>
+								<input type="radio" value="3) よく眠れるようになったこと　" name="QS11">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS114">4) 精神的に強くなったこと</div>
+								<input type="radio" value="4) 精神的に強くなったこと　" name="QS11">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT11">Tham khảo: 会社で男の人と女の人が話しています。女の人は、ジョギングを始めて、一番良かったことは何だと言っていますか。<br><br>男: そういえば、先輩ジョギング始めたそうですね。<br><br>女: そうなの。 最近、 流行ってるらしいから。 流行りにのってるみたいで、 何だか恥ずかしいんだけどね。<br><br>男: はは。 ジョギングすると、 体力ってつくもんなんですか。
+女: ううん。そうね。 前に比べたら、 疲れにくくなったかな。 それに、よく眠れるよ。<br><br>男: そうですか。 いいですね。<br><br>女:うん。 それにね。 実は何より、 気持ちの面でも、すごくいいんだ。 何ていうか、 例えば、 嫌なことがあっても落ち込みにくくなったり。<br><br>男: へえ。
+女だからね。 どっちかって言うと、 心の健康のために、しばらく続けてみようと思ってるんだ。<br><br>女の人は、ジョギングを始めて、 一番良かったことは何だと言っていますか。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS11">4</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type11">4</div>
+										<!-- bat dau mot chương mới-->
+								<div class="big_item"> 問題 3 では、問題用紙に何も印刷されていません。この問題は、全体としてどんな内容かを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問とせんたくしを聞いて、1から4の中から、最もよいものを一つ選んでください。 <br><br><iframe src="cid:frame-A1C05C55F18F5B36F3CFEE171763821E@mhtml.blink" width="440" height="70" allow="autoplay" allowfullscreen="true"></iframe> </div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 1番 </div>
+					<div style="display:none" id="diemso12">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS121">1) </div>
+								<input type="radio" value="1) 　" name="QS12">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS122">2) </div>
+								<input type="radio" value="2) 　" name="QS12">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS123">3) </div>
+								<input type="radio" value="3) 　" name="QS12">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS124">4)</div>
+								<input type="radio" value="4)　" name="QS12">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT12">Tham khảo: 大学の先生が授業で話しています。<br><br>男: 先日、リンゴ農家の方に頼まれて、講演会で話してきました。 今、リンゴ農家では、鼠による被害が問題になっています。 鼠がリンゴの木をかじって、ひどいときには、木が死んでしまうこと もあるんですね。 いいリンゴを作るためには、鼠の行動を知らないと、対策が立てられません。そこで、鼠の研究をしている私が講演をしたというわけです。<br><br>講演のテーマは何でしたか。<br><br>
+1 鼠の行動について<br>2鼠の種類について<br>3 リンゴの被害について<br>4 リンゴの育て方について</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS12">1</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type12">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 2番 </div>
+					<div style="display:none" id="diemso13">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS131">1) </div>
+								<input type="radio" value="1) 　" name="QS13">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS132">2) </div>
+								<input type="radio" value="2) 　" name="QS13">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS133">3) </div>
+								<input type="radio" value="3) 　" name="QS13">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS134">4)</div>
+								<input type="radio" value="4)　" name="QS13">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT13">Tham khảo: 留守番電話のメッセージを聞いています。<br><br>女:ヒガシ旅行の田中です。 あの、お問い合わせいただきました、 韓国行きの件でご連絡いたします。
+ご希望の飛行機はあいにく席がいっぱいでして、 キャンセル待ちか次の便への変更が必要となり ます。次の便でも午後4時には到着しますので、セミナーには間に合うかと思います。 こちらは、 まだ空席がございます。 えー、 私は午後8時ごろまでは店におりますので、ご連絡いただけます でしょうか。 また、ホテルのご予約なども承っておりますので、よろしくお願いします。<br><br>何についてのメッセージですか。<br>1 飛行機の予約<br>
+2 旅行会社の営業時間<br>3セミナーの日程<br>4 ホテルのキャンセル</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS13">1</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type13">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 3番 </div>
+					<div style="display:none" id="diemso14">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS141">1) </div>
+								<input type="radio" value="1) 　" name="QS14">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS142">2) </div>
+								<input type="radio" value="2) 　" name="QS14">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS143">3) </div>
+								<input type="radio" value="3) 　" name="QS14">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS144">4)</div>
+								<input type="radio" value="4)　" name="QS14">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT14">Tham khảo: テレビでアナウンサーが話しています。<br><br>
+男:今日は山田美智子さんをゲストにお迎えいたしました。 山田さんは、お子さんが生まれたのをきっかけに、 専業主婦となられました。 そのため、 家庭の収入が減り、 自然と節約するようになっ たそうです。 いまでは、いろいろと工夫するのが楽しく、すっかり節約が趣味になっているとの ことです。 今日は、その中から毎日の生活の中で、すぐ実践できることを紹介していただきますので、どうぞ、 メモを用意してご覧ください。<br><br>この番組のテーマは何ですか。<br>1 仕事を続ける工夫<br>2 収入を増やす工夫<br>3 お金を節約する工夫<br>4 家事の時間を節約する工夫</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS14">3</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type14">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 4番 </div>
+					<div style="display:none" id="diemso15">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS151">1) </div>
+								<input type="radio" value="1) 　" name="QS15">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS152">2) </div>
+								<input type="radio" value="2) 　" name="QS15">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS153">3) </div>
+								<input type="radio" value="3) 　" name="QS15">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS154">4)</div>
+								<input type="radio" value="4)　" name="QS15">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT15">Tham khảo: 大学のサークルのリーダーが話しています。<br><br>女: 土曜日は、小学生との交流会、お疲れ様でした。 子供たちはみんな、 とても楽しんでくれていましたよね。 先生方や保護者の方も、高く評価してくださったようで、 よかったです。 ただ、場所 に問題があったように思います。 最初は、広くて、動きやすくて、いいな、 とおもっていたんで すが、逆に広すぎて、 子供たちと距離がありました。 次回、 来月のクリスマスパーティでは、 内 容だけじゃなく、このような点についても、気をつけたいと思います。 えー、 みなさんは、何か気づいた点はありませんか?<br><br>リーダーの話の主な内容は何ですか。<br><br>1 小学生との交流会の内容<br>2 小学生との交流会の反省点<br>3クリスマスパーティの内容<br>4 クリスマスパーティの反省点</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS15">2</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type15">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 5番 </div>
+					<div style="display:none" id="diemso16">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS161">1) </div>
+								<input type="radio" value="1) 　" name="QS16">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS162">2) </div>
+								<input type="radio" value="2) 　" name="QS16">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS163">3) </div>
+								<input type="radio" value="3) 　" name="QS16">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS164">4)</div>
+								<input type="radio" value="4)　" name="QS16">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT16">Tham khảo: 男の人と女の人が話しています。<br><br>男: 転職して、 一ヶ月たったんだよね。 どう? 新しい会社は?<br><br>女: うん、 最近やっと慣れてきたかな。 覚えることがたくさんあって、 結構、 夜も遅いんだ。<br><br>男: そうなんだ。<br><br>女:うん。前の会社はあまりいそがしくなかったから、その点はよかったけど、単調だし、誰でもできる仕事だったからねえ。 今は責任ある仕事をさせてもらえるから、それが、一番の魅力かな。毎日大変だけど、 楽しいよ。<br><br>女の人は、 新しい仕事について、 どうおもっていますか。<br><br>1 簡単で、 楽しい<br>2忙しいが、面白い<br>3 単調で、 つまらない<br> 4 仕事は多いが、 簡単だ</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS16">2</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type16">4</div>
+										<!-- bat dau mot chương mới-->
+								<div class="big_item"> 問題 4 では、問題用紙に何も印刷されていません。 まず文を聞いてください。それから、それ に対する返事を聞いて、1 から 3 の中から、最もよいものを一つ選んでください。 <br><br><iframe src="cid:frame-9CB8B1241D27E6BC0470EF94BB85A4BA@mhtml.blink" width="440" height="70" allow="autoplay" allowfullscreen="true"></iframe> </div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 1番 </div>
+					<div style="display:none" id="diemso17">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS171">1) </div>
+								<input type="radio" value="1) 　" name="QS17">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS172">2) </div>
+								<input type="radio" value="2) 　" name="QS17">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS173">3) </div>
+								<input type="radio" value="3) 　" name="QS17">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT17">Tham khảo: あ、台所の電球、 切れちゃったよ。<br><br>1 あっ、 電気、 もう消すね。<br>2 えっ、 あたらしいの、 買ってき<br>
+3 うん、 台所、 きれいにしてね。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS17">2</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type17">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 2番 </div>
+					<div style="display:none" id="diemso18">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS181">1) </div>
+								<input type="radio" value="1) 　" name="QS18">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS182">2) </div>
+								<input type="radio" value="2) 　" name="QS18">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS183">3) </div>
+								<input type="radio" value="3) 　" name="QS18">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT18">Tham khảo: いらっしゃいませ。 何かお探しですか。<br><br>1 あ、ちょっと見てるだけです。<br>2 いいえ、さっき来たばかりです。<br>
+3 はい、なんでもけっこうです。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS18">1</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type18">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 3番 </div>
+					<div style="display:none" id="diemso19">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS191">1) </div>
+								<input type="radio" value="1) 　" name="QS19">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS192">2) </div>
+								<input type="radio" value="2) 　" name="QS19">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS193">3) </div>
+								<input type="radio" value="3) 　" name="QS19">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT19">Tham khảo: やるだけのことはやったし、 あとは合格発表の日を待つだけだね。<br><br>
+1 本当に悔しいね。<br>2 もう少し頑張るしかないか。<br>3 今度こそ、 受かりたいよね。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS19">3</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type19">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 4番 </div>
+					<div style="display:none" id="diemso20">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS201">1) </div>
+								<input type="radio" value="1) 　" name="QS20">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS202">2) </div>
+								<input type="radio" value="2) 　" name="QS20">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS203">3) </div>
+								<input type="radio" value="3) 　" name="QS20">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT20">Tham khảo: あのう、お茶でもいかがですか。<br><br>1 お世話になっております。<br>
+2 はい、大変おいしかったです。<br>3 すみません。 どうぞおかまいなく。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS20">3</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type20">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 5番 </div>
+					<div style="display:none" id="diemso21">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS211">1) </div>
+								<input type="radio" value="1) 　" name="QS21">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS212">2) </div>
+								<input type="radio" value="2) 　" name="QS21">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS213">3) </div>
+								<input type="radio" value="3) 　" name="QS21">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT21">Tham khảo: ねえ、山田さん、参加できないのなら、もう少し早く教えてくれなくちゃ。<br><br>1 えっ、連絡が必要だったんだ。<br>
+そう、今度は教えてもらえるといいね。<br>
+3 少しでも早く参加したんだ。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS21">1</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type21">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 6番 </div>
+					<div style="display:none" id="diemso22">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS221">1) </div>
+								<input type="radio" value="1) 　" name="QS22">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS222">2) </div>
+								<input type="radio" value="2) 　" name="QS22">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS223">3) </div>
+								<input type="radio" value="3) 　" name="QS22">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT22">Tham khảo: たしか、 あした中学の時のクラス会だったよね。 行くんでしょう。<br><br>1 楽しみにしてるんだ。<br>2 楽しんできてね。<br>3 たのしいでしょう。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS22">1</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type22">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 7番 </div>
+					<div style="display:none" id="diemso23">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS231">1) </div>
+								<input type="radio" value="1) 　" name="QS23">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS232">2) </div>
+								<input type="radio" value="2) 　" name="QS23">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS233">3) </div>
+								<input type="radio" value="3) 　" name="QS23">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT23">Tham khảo: 昨日、また電気、 つけっぱなしで寝てたね。<br><br>1 つけておいてくれたんだね。 ありがとう。<br>2 だって、 暗い方が好きだから。<br>
+3 ごめん。 本読んでて、 寝ちゃったみたい。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS23">3</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type23">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 8番 </div>
+					<div style="display:none" id="diemso24">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS241">1) </div>
+								<input type="radio" value="1) 　" name="QS24">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS242">2) </div>
+								<input type="radio" value="2) 　" name="QS24">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS243">3) </div>
+								<input type="radio" value="3) 　" name="QS24">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT24">Tham khảo: さっき言ってた本、 今度、貸してもらえるとうれしいんだけど。<br><br>
+1 こっちこそ、助かったよ。<br>2忘れないようにするね。<br>
+3 じゃあ、悪いけど、 お願いね。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS24">2</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type24">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 9番 </div>
+					<div style="display:none" id="diemso25">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS251">1) </div>
+								<input type="radio" value="1) 　" name="QS25">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS252">2) </div>
+								<input type="radio" value="2) 　" name="QS25">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS253">3) </div>
+								<input type="radio" value="3) 　" name="QS25">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT25">Tham khảo: あのう、こちらで山田課長とお会いする約束なんですが。<br><br>1 お会いできて、良かったです。<br>2 はい、少々お待ちください。<br>3 確かにお約束いたします。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS25">2</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type25">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 10番 </div>
+					<div style="display:none" id="diemso26">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS261">1) </div>
+								<input type="radio" value="1) 　" name="QS26">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS262">2) </div>
+								<input type="radio" value="2) 　" name="QS26">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS263">3) </div>
+								<input type="radio" value="3) 　" name="QS26">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT26">Tham khảo: ああ、田中さんのご主人ですか。 初めまして。<br><br>1 大変ご無沙汰しております。<br>2 はい、 相変わらずです。<br>3 妻がお世話になっております。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS26">3</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type26">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 11番 </div>
+					<div style="display:none" id="diemso27">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS271">1) </div>
+								<input type="radio" value="1) 　" name="QS27">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS272">2) </div>
+								<input type="radio" value="2) 　" name="QS27">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS273">3) </div>
+								<input type="radio" value="3) 　" name="QS27">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT27">Tham khảo: きのうね、 この角で、 自転車にぶつかりそうになっちゃったんだ。<br><br>1 あぶないんだよね。 ここ。<br>2 へえ、痛かったでしょう。<br><br>3 ここは問題ないよ。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS27">1</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type27">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 12番 </div>
+					<div style="display:none" id="diemso28">2</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS281">1) </div>
+								<input type="radio" value="1) 　" name="QS28">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS282">2) </div>
+								<input type="radio" value="2) 　" name="QS28">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS283">3) </div>
+								<input type="radio" value="3) 　" name="QS28">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT28">Tham khảo: 君、 なんてことをしてくれたんだ。<br><br>1 いいえ、とんでないです。<br>2 恐縮です。<br>3 申し訳ございません。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS28">3</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type28">4</div>
+										<!-- bat dau mot chương mới-->
+								<div class="big_item"> 問題 5 では、長めの話を聞きます。この問題には練習はありません。問題再紙にメモをとってもかまいません。  <br><br><iframe src="cid:frame-5DEC41023897355754A9BC0A09A60337@mhtml.blink" width="440" height="70" allow="autoplay" allowfullscreen="true"></iframe> </div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 1番
+問題用紙に何もいんさっされていません。 まず話をい聞いてください。それから、質問とせんたくしを聞 いて|から4の中から、最もよいものを一つ選んでください。 </div>
+					<div style="display:none" id="diemso29">1</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS291">1) </div>
+								<input type="radio" value="1) 　" name="QS29">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS292">2) </div>
+								<input type="radio" value="2) 　" name="QS29">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS293">3) </div>
+								<input type="radio" value="3) 　" name="QS29">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS294">4)</div>
+								<input type="radio" value="4)　" name="QS29">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT29">Tham khảo: 図書館で、女の人が係員と貸し出し用CDについて話しています。<br><br>
+女 : すみません。 子供が好きそうな歌のCDを探してるんですけど。 この4月に小学校に入ったばかりの子なんですが。<br><br>男: えーっと、こちらが子供向けのCDコーナーです。 「みんなで歌おう」っていうCDが人気があるんですが、 えーっと、 あー、あいにく 「みんなで歌おう」 はいま、貸し出し中ですねえ。<br><br>女: そうですか。<br><br>男: えーっと、 それから、こちらの「懐かしい子供の歌」 は、 昔懐かしい、 小さいお子さん向けの歌 ですね。それと、こちらの 「アニメの歌」は、テレビの人気アニメの歌を集めたものです。<br><br>女: へー、 いろいろあるんですね。 息子には、 アニメより、 私が子供のころに歌ったような歌を聞かせたいですね。<br><br>男: あーあと、いろんな国の子供の歌を集めたCDもありますよ。「世界のこどもの歌」っていうんですが、こちらです。<br><br>女: あー、でもこれ外国語なんですね、やっぱりさっきのにします。<br><br>女の人は、今日、 どのCDを借りますか。<br><br>1 「みんなで歌おう」<br>2 「懐かしい子供の歌」<br>3 「アニメの歌」<br>4 「世界の子供の歌」</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS29">2</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type29">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 2番 </div>
+					<div style="display:none" id="diemso30">1</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS301">1) </div>
+								<input type="radio" value="1) 　" name="QS30">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS302">2) </div>
+								<input type="radio" value="2) 　" name="QS30">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS303">3) </div>
+								<input type="radio" value="3) 　" name="QS30">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS304">4)</div>
+								<input type="radio" value="4)　" name="QS30">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT30">Tham khảo: 親子3人が、 遊園地へ行く計画を立てています。<br><br>女: 今日、遊園地の無料チケットをもらったのよ。<br><br>男: お、 遊園地か。 いいねえ。 じゃあ今度の日曜日に、 3人で行こうか。<br><br>女: 休日だと混むだろうから、 早い時間に行ったほうがいいかもね。<br><br>子供: ねえねえ、 僕、 来週の月曜日、学校お休みだよ。<br><br>女: あら、そうだったわね。 月曜日なら平日だし、 空いてそうねえ。 ねえ、仕事休めないの?<br><br>男: うーん、いまちょっと忙しいから、難しいなあ。<br><br>子供: でも、休みの日は、乗り物に乗るのにも、すごく待たされるって言ってたよ。 空いてる日のほうが、たくさん遊べていいよ。<br><br>女: そうよねえ。 仕方ない。 じゃあ、 お母さんと二人で行こうか。 お父さん抜きで、空いてる遊園地で、思い切り楽しんじゃう?<br><br>男: おいおい、 そんな、わかった。 何とか休みを取らせてもらうよ。<br><br>子供: やったあ!<br><br>遊園地へは、いつ、何人で行きますか。<br><br>1休日に3人で行く<br>2休日に2人で行く<br>3平日に3人で行く<br>4平日に2人で行く</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS30">3</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type30">4</div>
+										<!-- bat dau mot chương mới-->
+								<!-- dong nội dung bài cho phần đọc-->
+				<div class="question_content"> 3番 まず話を聞いてください。それから、二つの質問を聞いて、それぞれ問題用紙の1から4の中から、最もよいものを一つ選んでください。  </div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 質問1
+ </div>
+					<div style="display:none" id="diemso31">1</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS311">1) リラックスコース </div>
+								<input type="radio" value="1) リラックスコース 　" name="QS31">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS312">2) わくわくコース</div>
+								<input type="radio" value="2) わくわくコース　" name="QS31">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS313">3) ロマンコース</div>
+								<input type="radio" value="3) ロマンコース　" name="QS31">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS314">4) よくばりコース</div>
+								<input type="radio" value="4) よくばりコース　" name="QS31">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT31">Tham khảo: 男の人と、女の人が明日の旅行コースの説明を聞いています。<br><br>男1: えー、 明日は、 皆様にお選びいただけるよう、コースを4つご用意しました。 それぞれ、 半日このコースなので、午前にひとつ、午後にひとつ、一日にふたつのコースを自由に組み合わせてご 参加いただけます。 まず、 リラックスコース。 こちらは、温泉をのんびり楽しむコースです。 わ くわくコースは、 畑での収穫 牧場での動物との触れ合いを体験いただくコースです。 ロマンコ ースでは、ドラマでも話題になりましたお城を訪ね、 歴史を肌で感じていただきます。 最後に、欲張りコース。 このコースでは、地元名産のそばを味わっていただいたあと、 大型ショッピングセンターでお買い物をしていただきます。<br><br>男2: どれにしようか、 2人でひとつずつ、 好きなの選んで一緒にまわろうか。<br><br>女 そうねえ。 あなたはやっぱり、 温泉?<br><br>男2 : うーん、 そのつもりだったんだけど、さっきの説明聞いてたら、いろいろ体験してみるのも悪くないかなって。 今ってあんまり自然を感じるチャンスもないし。<br><br>女: いいわねえ。 でも、そばはいいの?<br><br>男2: そばもすてがたいけど、 今回はやっぱり、体験かな。<br><br>女: そう、じゃあ、ひとつはそれね。 私は、 ドラマで見てからここのお城気になってて、一度見てみたかったんだ。<br><br>男2: じゃあ、 今回はそれで行こうか。<br><br>質問1 男の人はどのコースをえらびましたか。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS31">2</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type31">4</div>
+										<!-- bat dau mot chương mới-->
+														<!-- dong cau hoi -->
+					<div class="question_list"> 質問2 </div>
+					<div style="display:none" id="diemso32">1</div>
+					<!-- dong các đáp an -->
+											<div class="answer_2row">
+																												<label class="container">
+								<div class="answers" id="QS321">1) リラックスコース </div>
+								<input type="radio" value="1) リラックスコース 　" name="QS32">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS322">2) わくわくコース</div>
+								<input type="radio" value="2) わくわくコース　" name="QS32">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS323">3) ロマンコース</div>
+								<input type="radio" value="3) ロマンコース　" name="QS32">
+								<span class="checkmark"></span>
+							</label>
+																								<label class="container">
+								<div class="answers" id="QS324">4) よくばりコース</div>
+								<input type="radio" value="4) よくばりコース　" name="QS32">
+								<span class="checkmark"></span>
+							</label>
+																	</div>
+
+										<!-- phan giai thich cho dap an thi an di -->
+					<div style="display:none;color:red;padding-left:5px;" id="GT32">Tham khảo:  質問2 女の人はどのコースをえらびましたか。</div>	
+										<!-- dong cau tra loi bi an di-->
+		 			<div style="display:none" id="AS32">3</div>
+		 			
+					<!-- dong cho biet cau nay thuoc kieu thi nao, tu vung hay doc hieu-->
+		 			<div style="display:none" id="type32">4</div>
+										<!-- dong cuoi cung ghi tong so cau hoi-->
+	 		<div style="display:none" id="totalQUestion">32</div>
+				</form>			
+</div>    <script src="js/scripts.js"></script>
     <script src="js/nhgodata.js"></script>
 </body>
 </html>
