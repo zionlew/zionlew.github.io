@@ -93,8 +93,16 @@
             justify-content: center;
             min-height: 140px;
         }
-        
-        .link-block:hover {
+        .rect-link {
+            display: inline-block;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            min-width: 150px;
+        }        .link-block:hover {
             transform: translateY(-8px) scale(1.02);
             box-shadow: 0 15px 30px rgba(41, 128, 185, 0.4);
             background: linear-gradient(145deg, #42a5f5, #3498db);
@@ -125,8 +133,26 @@
             margin-bottom: 15px;
             opacity: 0.9;
         }
-        
-        footer {
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+                .link-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }        
+        /* 样式4：阴影效果 */
+        .style-4 {
+            background-color: #3498db;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }        footer {
             text-align: center;
             margin-top: 30px;
             color: #7f8c8d;
@@ -135,7 +161,10 @@
             border-top: 1px solid #3498db33;
             width: 100%;
         }
-        
+        .style-4:hover {
+            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+        }        
         @media (max-width: 900px) {
             .link-grid {
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -181,147 +210,122 @@
 <body>
     <div class="decoration decoration-1"></div>
     <div class="decoration decoration-2"></div>
-    
     <div class="container">
         <header>
             <h1><i class="fas fa-language"></i> N2</h1>
             <p class="subtitle">2010 - 2024</p>
         </header>
         
-        <!-- 
-        <div class="stats">
-            <h2>15 Đề Thi Có Sẵn</h2>
-            <p>Chọn một đề thi để bắt đầu luyện tập từ vựng tiếng Nhật N3</p>
-            <p><i class="fas fa-clock"></i> Cập nhật lần cuối: 12/2024</p>
+        <div class="section">
+            <h2>词汇</h2>
+            <p></p>
+            <div class="link-container">
+                <a href="2024_12_1.html" class="rect-link style-4">2024年12月</a>
+                <a href="2024_07_1.html" class="rect-link style-4">2024年07月</a>
+                <a href="2023_12_1.html" class="rect-link style-4">2023年12月</a>
+                <a href="2023_07_1.html" class="rect-link style-4">2023年07月</a>
+                <a href="2022_12_1.html" class="rect-link style-4">2022年12月</a>
+                <a href="2022_07_1.html" class="rect-link style-4">2022年07月</a>
+                <a href="2021_12_1.html" class="rect-link style-4">2021年12月</a>
+                <a href="2021_07_1.html" class="rect-link style-4">2021年07月</a>
+                <a href="2020_12_1.html" class="rect-link style-4">2020年12月</a>
+                <a href="2019_12_1.html" class="rect-link style-4">2019年12月</a>
+                <a href="2019_07_1.html" class="rect-link style-4">2019年07月</a>
+                <a href="2018_12_1.html" class="rect-link style-4">2018年12月</a>
+                <a href="2018_07_1.html" class="rect-link style-4">2018年07月</a>
+                <a href="2017_12_1.html" class="rect-link style-4">2017年12月</a>
+                <a href="2017_07_1.html" class="rect-link style-4">2017年07月</a>
+                <a href="2016_12_1.html" class="rect-link style-4">2016年12月</a>
+                <a href="2016_07_1.html" class="rect-link style-4">2016年07月</a>
+                <a href="2015_12_1.html" class="rect-link style-4">2015年12月</a>
+                <a href="2015_07_1.html" class="rect-link style-4">2015年07月</a>
+                <a href="2014_12_1.html" class="rect-link style-4">2014年12月</a>
+                <a href="2014_07_1.html" class="rect-link style-4">2014年07月</a>
+                <a href="2013_12_1.html" class="rect-link style-4">2013年12月</a>
+                <a href="2013_07_1.html" class="rect-link style-4">2013年07月</a>
+                <a href="2012_12_1.html" class="rect-link style-4">2012年12月</a>
+                <a href="2012_07_1.html" class="rect-link style-4">2012年07月</a>
+                <a href="2011_12_1.html" class="rect-link style-4">2011年12月</a>
+                <a href="2011_07_1.html" class="rect-link style-4">2011年07月</a>
+                <a href="2010_12_1.html" class="rect-link style-4">2010年12月</a>
+                <a href="2010_07_1.html" class="rect-link style-4">2010年07月</a>
+            </div>
         </div>
-        -->
-
-        <div class="link-grid">
-            <!-- 2024 -->
-            <a href="2024_12_3.html" class="link-block">
-                <div class="link-title">听力</div>
-                <div class="link-date">12/2024</div>
-            </a>
-            <a href="2024_12_2.html" class="link-block">
-                <div class="link-title">阅读</div>
-                <div class="link-date">12/2024</div>
-            </a>
-            <a href="2024_12_1.html" class="link-block">
-                <div class="link-title">文字</div>
-                <div class="link-date">12/2024</div>
-            </a>
+        <div class="section">
+            <h2>阅读</h2>
+            <p></p>
+            <div class="link-container">
+                <a href="2024_12_2.html" class="rect-link style-4">2024年12月</a>
+                <a href="2024_07_2.html" class="rect-link style-4">2024年07月</a>
+                <a href="2023_12_2.html" class="rect-link style-4">2023年12月</a>
+                <a href="2023_07_2.html" class="rect-link style-4">2023年07月</a>
+                <a href="2022_12_2.html" class="rect-link style-4">2022年12月</a>
+                <a href="2022_07_2.html" class="rect-link style-4">2022年07月</a>
+                <a href="2021_12_2.html" class="rect-link style-4">2021年12月</a>
+                <a href="2021_07_2.html" class="rect-link style-4">2021年07月</a>
+                <a href="2020_12_2.html" class="rect-link style-4">2020年12月</a>
+                <a href="2019_12_2.html" class="rect-link style-4">2019年12月</a>
+                <a href="2019_07_2.html" class="rect-link style-4">2019年07月</a>
+                <a href="2018_12_2.html" class="rect-link style-4">2018年12月</a>
+                <a href="2018_07_2.html" class="rect-link style-4">2018年07月</a>
+                <a href="2017_12_2.html" class="rect-link style-4">2017年12月</a>
+                <a href="2017_07_2.html" class="rect-link style-4">2017年07月</a>
+                <a href="2016_12_2.html" class="rect-link style-4">2016年12月</a>
+                <a href="2016_07_2.html" class="rect-link style-4">2016年07月</a>
+                <a href="2015_12_2.html" class="rect-link style-4">2015年12月</a>
+                <a href="2015_07_2.html" class="rect-link style-4">2015年07月</a>
+                <a href="2014_12_2.html" class="rect-link style-4">2014年12月</a>
+                <a href="2014_07_2.html" class="rect-link style-4">2014年07月</a>
+                <a href="2013_12_2.html" class="rect-link style-4">2013年12月</a>
+                <a href="2013_07_2.html" class="rect-link style-4">2013年07月</a>
+                <a href="2012_12_2.html" class="rect-link style-4">2012年12月</a>
+                <a href="2012_07_2.html" class="rect-link style-4">2012年07月</a>
+                <a href="2011_12_2.html" class="rect-link style-4">2011年12月</a>
+                <a href="2011_07_2.html" class="rect-link style-4">2011年07月</a>
+                <a href="2010_12_2.html" class="rect-link style-4">2010年12月</a>
+                <a href="2010_07_2.html" class="rect-link style-4">2010年07月</a>
+            </div>
         </div>
-        
+        <div class="section">
+            <h2>听力</h2>
+            <p></p>
+            <div class="link-container">
+                <a href="2024_12_3.html" class="rect-link style-4">2024年12月</a>
+                <a href="2024_07_3.html" class="rect-link style-4">2024年07月</a>
+                <a href="2023_12_3.html" class="rect-link style-4">2023年12月</a>
+                <a href="2023_07_3.html" class="rect-link style-4">2023年07月</a>
+                <a href="2022_12_3.html" class="rect-link style-4">2022年12月</a>
+                <a href="2022_07_3.html" class="rect-link style-4">2022年07月</a>
+                <a href="2021_12_3.html" class="rect-link style-4">2021年12月</a>
+                <a href="2021_07_3.html" class="rect-link style-4">2021年07月</a>
+                <a href="2020_12_3.html" class="rect-link style-4">2020年12月</a>
+                <a href="2019_12_3.html" class="rect-link style-4">2019年12月</a>
+                <a href="2019_07_3.html" class="rect-link style-4">2019年07月</a>
+                <a href="2018_12_3.html" class="rect-link style-4">2018年12月</a>
+                <a href="2018_07_3.html" class="rect-link style-4">2018年07月</a>
+                <a href="2017_12_3.html" class="rect-link style-4">2017年12月</a>
+                <a href="2017_07_3.html" class="rect-link style-4">2017年07月</a>
+                <a href="2016_12_3.html" class="rect-link style-4">2016年12月</a>
+                <a href="2016_07_3.html" class="rect-link style-4">2016年07月</a>
+                <a href="2015_12_3.html" class="rect-link style-4">2015年12月</a>
+                <a href="2015_07_3.html" class="rect-link style-4">2015年07月</a>
+                <a href="2014_12_3.html" class="rect-link style-4">2014年12月</a>
+                <a href="2014_07_3.html" class="rect-link style-4">2014年07月</a>
+                <a href="2013_12_3.html" class="rect-link style-4">2013年12月</a>
+                <a href="2013_07_3.html" class="rect-link style-4">2013年07月</a>
+                <a href="2012_12_3.html" class="rect-link style-4">2012年12月</a>
+                <a href="2012_07_3.html" class="rect-link style-4">2012年07月</a>
+                <a href="2011_12_3.html" class="rect-link style-4">2011年12月</a>
+                <a href="2011_07_3.html" class="rect-link style-4">2011年07月</a>
+                <a href="2010_12_3.html" class="rect-link style-4">2010年12月</a>
+                <a href="2010_07_3.html" class="rect-link style-4">2010年07月</a>
+            </div>
+        </div>
         <footer>
-            <p>© 2024 JLPT N3 Vocabulary Test Preparation | <i class="fas fa-heart" style="color: #e74c3c;"></i> Học tập hiệu quả</p>
+            <p></p>
         </footer>
     </div>
-<a href="2024_12_3.html">2024_12_3</a><br/>
-<a href="2024_12_2.html">2024_12_2</a><br/>
-<a href="2024_12_1.html">2024_12_1</a><br/>
-<a href="2024_07_3.html">2024_07_3</a><br/>
-<a href="2024_07_2.html">2024_07_2</a><br/>
-<a href="2024_07_1.html">2024_07_1</a><br/>
-<a href="2023_12_3.html">2023_12_3</a><br/>
-<a href="2023_12_2.html">2023_12_2</a><br/>
-<a href="2023_12_1.html">2023_12_1</a><br/>
-<a href="2023_07_3.html">2023_07_3</a><br/>
-<a href="2023_07_2.html">2023_07_2</a><br/>
-<a href="2023_07_1.html">2023_07_1</a><br/>
-<a href="2022_12_3.html">2022_12_3</a><br/>
-<a href="2022_12_2.html">2022_12_2</a><br/>
-<a href="2022_12_1.html">2022_12_1</a><br/>
-<a href="2022_07_3.html">2022_07_3</a><br/>
-<a href="2022_07_2.html">2022_07_2</a><br/>
-<a href="2022_07_1.html">2022_07_1</a><br/>
-<a href="2021_12_3.html">2021_12_3</a><br/>
-<a href="2021_12_2.html">2021_12_2</a><br/>
-<a href="2021_12_1.html">2021_12_1</a><br/>
-<a href="2021_07_3.html">2021_07_3</a><br/>
-<a href="2021_07_2.html">2021_07_2</a><br/>
-<a href="2021_07_1.html">2021_07_1</a><br/>
-<a href="2020_12_3.html">2020_12_3</a><br/>
-<a href="2020_12_2.html">2020_12_2</a><br/>
-<a href="2020_12_1.html">2020_12_1</a><br/>
-<a href="2019_12_3.html">2019_12_3</a><br/>
-<a href="2019_12_2.html">2019_12_2</a><br/>
-<a href="2019_12_1.html">2019_12_1</a><br/>
-<a href="2019_07_3.html">2019_07_3</a><br/>
-<a href="2019_07_2.html">2019_07_2</a><br/>
-<a href="2019_07_1.html">2019_07_1</a><br/>
-<a href="2018_12_3.html">2018_12_3</a><br/>
-<a href="2018_12_2.html">2018_12_2</a><br/>
-<a href="2018_12_1.html">2018_12_1</a><br/>
-<a href="2018_07_3.html">2018_07_3</a><br/>
-<a href="2018_07_2.html">2018_07_2</a><br/>
-<a href="2018_07_1.html">2018_07_1</a><br/>
-<a href="2017_12_3.html">2017_12_3</a><br/>
-<a href="2017_12_2.html">2017_12_2</a><br/>
-<a href="2017_12_1.html">2017_12_1</a><br/>
-<a href="2017_07_3.html">2017_07_3</a><br/>
-<a href="2017_07_2.html">2017_07_2</a><br/>
-<a href="2017_07_1.html">2017_07_1</a><br/>
-<a href="2016_12_3.html">2016_12_3</a><br/>
-<a href="2016_12_2.html">2016_12_2</a><br/>
-<a href="2016_12_1.html">2016_12_1</a><br/>
-<a href="2016_07_3.html">2016_07_3</a><br/>
-<a href="2016_07_2.html">2016_07_2</a><br/>
-<a href="2016_07_1.html">2016_07_1</a><br/>
-<a href="2015_12_3.html">2015_12_3</a><br/>
-<a href="2015_12_2.html">2015_12_2</a><br/>
-<a href="2015_12_1.html">2015_12_1</a><br/>
-<a href="2015_07_3.html">2015_07_3</a><br/>
-<a href="2015_07_2.html">2015_07_2</a><br/>
-<a href="2015_07_1.html">2015_07_1</a><br/>
-<a href="2014_12_3.html">2014_12_3</a><br/>
-<a href="2014_12_2.html">2014_12_2</a><br/>
-<a href="2014_12_1.html">2014_12_1</a><br/>
-<a href="2014_07_3.html">2014_07_3</a><br/>
-<a href="2014_07_2.html">2014_07_2</a><br/>
-<a href="2014_07_1.html">2014_07_1</a><br/>
-<a href="2013_12_3.html">2013_12_3</a><br/>
-<a href="2013_12_2.html">2013_12_2</a><br/>
-<a href="2013_12_1.html">2013_12_1</a><br/>
-<a href="2013_07_3.html">2013_07_3</a><br/>
-<a href="2013_07_2.html">2013_07_2</a><br/>
-<a href="2013_07_1.html">2013_07_1</a><br/>
-<a href="2012_12_3.html">2012_12_3</a><br/>
-<a href="2012_12_2.html">2012_12_2</a><br/>
-<a href="2012_12_1.html">2012_12_1</a><br/>
-<a href="2012_07_3.html">2012_07_3</a><br/>
-<a href="2012_07_2.html">2012_07_2</a><br/>
-<a href="2012_07_1.html">2012_07_1</a><br/>
-<a href="2011_12_3.html">2011_12_3</a><br/>
-<a href="2011_12_2.html">2011_12_2</a><br/>
-<a href="2011_12_1.html">2011_12_1</a><br/>
-<a href="2011_07_3.html">2011_07_3</a><br/>
-<a href="2011_07_2.html">2011_07_2</a><br/>
-<a href="2011_07_1.html">2011_07_1</a><br/>
-<a href="2010_12_3.html">2010_12_3</a><br/>
-<a href="2010_12_2.html">2010_12_2</a><br/>
-<a href="2010_12_1.html">2010_12_1</a><br/>
-<a href="2010_07_3.html">2010_07_3</a><br/>
-<a href="2010_07_2.html">2010_07_2</a><br/>
-<a href="2010_07_1.html">2010_07_1</a><br/>
     </div>   
     
-    <script>
-        // 添加简单的点击效果
-        document.querySelectorAll('.link-block').forEach(block => {
-            block.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // 添加点击动画
-                this.style.transform = 'scale(0.95)';
-                
-                setTimeout(() => {
-                    this.style.transform = '';
-                }, 200);
-                
-                // 这里可以添加实际链接跳转逻辑
-                console.log('Clicked: ' + this.querySelector('.link-date').textContent);
-            });
-        });
-    </script>
 </body>
 </html>
