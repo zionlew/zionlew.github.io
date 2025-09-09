@@ -42,20 +42,20 @@ table, th, td {
 	cursor: pointer;
 }
 .big_item{
-    background: #b1b9f5;
+    /*background: #b1b9f5;*/
     padding: 7px 2px;
     border: 1px solid #b1b9f5;
     font-weight: bold;
 }
 .question_list{
-	background: #c6c8ca;
+	/*background: #c6c8ca;*/
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 14px;
     padding-right: 2px;
 }
 .question_content{
-	background: #d1d4f1;
+	/*background: #d1d4f1;*/
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 3px;
