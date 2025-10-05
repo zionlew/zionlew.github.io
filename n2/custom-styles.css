@@ -1,0 +1,66 @@
+body {
+    background: #f6f8fa;
+    font-family: 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+}
+
+h2, H2 {
+    color: #497cef;
+    border-bottom: 2px solid #e3eafc;
+    padding-bottom: 8px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+p {
+    margin: 12px 0;
+    font-size: 1.08em;
+}
+
+a {
+    color: #497cef;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #1a4ca0;
+    text-decoration: underline;
+}
+
+#page-wrapper {
+    margin-top: 16px;
+}
+
+/* 语法条目美化 */
+#page-wrapper p {
+    background: #f0f4fa;
+    border-radius: 6px;
+    padding: 8px 12px;
+    box-shadow: 0 1px 3px rgba(73,124,239,0.04);
+    transition: background 0.2s;
+}
+#page-wrapper p:hover {
+    background: #e3eafc;
+}
+
+/* 响应式 */
+@media (max-width: 600px) {
+    #wrapper {
+        padding: 12px 4px;
+    }
+    h2, H2 {
+        font-size: 1.2em;
+    }
+}
